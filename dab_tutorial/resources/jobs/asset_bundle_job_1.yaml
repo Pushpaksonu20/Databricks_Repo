@@ -1,0 +1,13 @@
+resources:
+  jobs:
+    Asset_Bundle_Jobs_1:
+      name: Asset_Bundle_Jobs_1
+      tasks:
+        - task_key: Ingestion
+          notebook_task:
+            # notebook_path: /Workspace/Users/pushpak.lsonu@gmail.com/DAB_Tutorial_Udemy_Asset_Bundles/Databricks_Repo/dab_tutorial/src/Notebooks/data_ingestion
+            notebook_path: ../../src/Notebooks/data_ingestion.ipynb
+            source: WORKSPACE
+      queue:
+        enabled: true
+      performance_target: PERFORMANCE_OPTIMIZED

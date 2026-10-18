@@ -1,0 +1,15 @@
+resources:
+  pipelines:
+    pipeline_asset_bundle_pipeline_1:
+      name: Asset_Bundle_Pipeline_1
+      libraries:
+        - glob:
+            include: ../../src/Asset_Bundle_Pipeline_1/transformations/**
+      schema: default
+      continuous: false
+      development: false
+      photon: true
+      channel: CURRENT
+      catalog: workspace
+      serverless: true
+      root_path: ../../src/Asset_Bundle_Pipeline_1
